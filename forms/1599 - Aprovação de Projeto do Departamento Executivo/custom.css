@@ -1,0 +1,10 @@
+form label.required:after{
+	content : " *";
+	color: #FF0000;
+}
+
+
+a:link { color: #0000EE !important;}
+a:visited { color: #551A8B !important; }
+a:link:active, :visited:active { color: #FF0000 !important; }
+a:link, :visited { text-decoration: underline !important; cursor: pointer !important; }

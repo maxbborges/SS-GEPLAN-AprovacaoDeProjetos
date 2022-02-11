@@ -1,0 +1,2461 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>aprovacao_projeto_dex1</processId>
+    </processDefinitionPK>
+    <processDescription>Aprovação dos Projetos do DEX</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>false</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>GePLAN</categoryId>
+    <managerEngineAllocationId></managerEngineAllocationId>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <uniqueCardVersion>false</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>1</complementsLevel>
+    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>Aprovação dos Projetos do DEX</processId>
+      <version>37</version>
+    </processDefinitionVersionPK>
+    <versionDescription>Nova Versão.</versionDescription>
+    <formId>1599</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>2</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>false</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>150</positionX>
+      <positionY>82</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>10</sequence>
+      </processStatePK>
+      <stateName>Análise do Responsável pelo Projeto</stateName>
+      <stateDescription>Análise do Responsável pelo Projeto</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;cd_resp_pelo_proj&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>115</positionX>
+      <positionY>184</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>13</sequence>
+      </processStatePK>
+      <stateName>Análise do Responsável pelo Objetivo Estratégico</stateName>
+      <stateDescription>Análise do Responsável pelo Objetivo Estratégico</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;matricula_gestor_OE&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>277</positionX>
+      <positionY>404</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>17</sequence>
+      </processStatePK>
+      <stateName>Análise do Planejamento Estratégico</stateName>
+      <stateDescription>Análise do Planejamento Estratégico</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;_APROVACAO_DE_PROJETOS&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>590</positionX>
+      <positionY>590</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>22</sequence>
+      </processStatePK>
+      <stateName>Análise do Diretor Adjunto</stateName>
+      <stateDescription>Análise do Diretor Adjunto</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;DIRETOR_ADJUNTO_DIEX&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>757</positionX>
+      <positionY>779</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>26</sequence>
+      </processStatePK>
+      <stateName>Análise da Diretora Executiva</stateName>
+      <stateDescription>Análise da Diretora Executiva</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;DIRETOR_EXECUTIVO_NACIONAL_DIEX&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1130</positionX>
+      <positionY>772</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>34</sequence>
+      </processStatePK>
+      <stateName>Ajustes</stateName>
+      <stateDescription>Ajustes</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;4&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1327</positionX>
+      <positionY>70</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>45</sequence>
+      </processStatePK>
+      <stateName>Assinaturas</stateName>
+      <stateDescription>Assinaturas</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1670</positionX>
+      <positionY>786</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>48</sequence>
+      </processStatePK>
+      <stateName>Tratativa</stateName>
+      <stateDescription>Tratativa</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;26&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1670</positionX>
+      <positionY>920</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>54</sequence>
+      </processStatePK>
+      <stateName>Gerar Formulário Vertsign</stateName>
+      <stateDescription>Gerar Formulário Vertsign</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1460</positionX>
+      <positionY>772</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>57</sequence>
+      </processStatePK>
+      <stateName>Erro Geração Formulário</stateName>
+      <stateDescription>Erro Geração Formulário</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;26&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1460</positionX>
+      <positionY>910</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>47</sequence>
+      </processStatePK>
+      <stateName>Intermediate</stateName>
+      <stateDescription>Intermediate</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1770</positionX>
+      <positionY>836</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>45</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>51</sequence>
+      </processStatePK>
+      <stateName>Aguardando Assinaturas</stateName>
+      <stateDescription>Aguardando Assinaturas</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1866</positionX>
+      <positionY>796</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>35</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>0</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>58</sequence>
+      </processStatePK>
+      <stateName>Intermediate</stateName>
+      <stateDescription>Intermediate</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1550</positionX>
+      <positionY>822</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>54</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>12</sequence>
+      </processStatePK>
+      <stateName>Aprovado?</stateName>
+      <stateDescription>Aprovado?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>300</positionX>
+      <positionY>254</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>15</sequence>
+      </processStatePK>
+      <stateName>Aprovado?</stateName>
+      <stateDescription>Aprovado?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>490</positionX>
+      <positionY>402</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>20</sequence>
+      </processStatePK>
+      <stateName>Validado?</stateName>
+      <stateDescription>Validado?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>780</positionX>
+      <positionY>581</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>24</sequence>
+      </processStatePK>
+      <stateName>Aprovado?</stateName>
+      <stateDescription>Aprovado?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>970</positionX>
+      <positionY>763</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>28</sequence>
+      </processStatePK>
+      <stateName>Aprovado?</stateName>
+      <stateDescription>Aprovado?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>1520</positionX>
+      <positionY>597</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>66</sequence>
+      </processStatePK>
+      <stateName>Ajuste?</stateName>
+      <stateDescription>Ajuste?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>1310</positionX>
+      <positionY>770</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>30</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1866</positionX>
+      <positionY>900</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>32</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1680</positionX>
+      <positionY>630</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>42</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>982</positionX>
+      <positionY>880</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>37</version>
+        <sequence>12</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>34</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>37</version>
+        <sequence>12</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>17</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>37</version>
+        <sequence>12</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>13</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>37</version>
+        <sequence>15</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>17</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>37</version>
+        <sequence>15</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>34</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>37</version>
+        <sequence>20</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>22</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>37</version>
+        <sequence>20</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>34</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>37</version>
+        <sequence>24</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>26</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>37</version>
+        <sequence>24</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>42</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>37</version>
+        <sequence>24</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>34</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>37</version>
+        <sequence>28</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>45</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>37</version>
+        <sequence>28</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>32</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>37</version>
+        <sequence>28</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>34</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>37</version>
+        <sequence>66</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>54</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>37</version>
+        <sequence>66</sequence>
+      </conditionProcessStatePK>
+      <condition>false</condition>
+      <destinationSequenceId>28</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+  </list>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>11</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>10</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>14</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>12</initialStateSequence>
+      <finalStateSequence>13</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>16</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>13</initialStateSequence>
+      <finalStateSequence>15</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>18</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>15</initialStateSequence>
+      <finalStateSequence>17</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>21</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>17</initialStateSequence>
+      <finalStateSequence>20</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>23</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>20</initialStateSequence>
+      <finalStateSequence>22</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>25</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>22</initialStateSequence>
+      <finalStateSequence>24</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>27</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>24</initialStateSequence>
+      <finalStateSequence>26</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>33</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>28</initialStateSequence>
+      <finalStateSequence>32</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Não</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>35</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>28</initialStateSequence>
+      <finalStateSequence>34</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Necessário ajustar</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>36</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>34</initialStateSequence>
+      <finalStateSequence>10</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>37</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>12</initialStateSequence>
+      <finalStateSequence>34</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Necessário ajustar</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>38</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>15</initialStateSequence>
+      <finalStateSequence>34</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Necessário ajustar</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>39</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>20</initialStateSequence>
+      <finalStateSequence>34</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Necessário ajustar</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>40</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>24</initialStateSequence>
+      <finalStateSequence>34</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Necessário ajustar</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>41</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>10</initialStateSequence>
+      <finalStateSequence>12</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>43</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>24</initialStateSequence>
+      <finalStateSequence>42</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>44</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>12</initialStateSequence>
+      <finalStateSequence>17</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>49</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>47</initialStateSequence>
+      <finalStateSequence>48</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>50</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>48</initialStateSequence>
+      <finalStateSequence>45</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>52</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>45</initialStateSequence>
+      <finalStateSequence>51</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>53</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>51</initialStateSequence>
+      <finalStateSequence>30</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>59</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>58</initialStateSequence>
+      <finalStateSequence>57</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>60</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>57</initialStateSequence>
+      <finalStateSequence>54</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>64</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>54</initialStateSequence>
+      <finalStateSequence>28</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>65</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>28</initialStateSequence>
+      <finalStateSequence>45</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>67</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>26</initialStateSequence>
+      <finalStateSequence>66</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>68</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>66</initialStateSequence>
+      <finalStateSequence>54</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <linkSequence>69</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>66</initialStateSequence>
+      <finalStateSequence>28</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskSave</eventId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>//Definindo os parâmetros&#xd;
+var horario = new Date().toLocaleTimeString(&apos;pt-BR&apos;).toString().split(&apos;:&apos;).join(&apos;&apos;);&#xd;
+var horario2 = new Date().toLocaleTimeString(&apos;pt-BR&apos;);&#xd;
+&#xd;
+var hoje = new Date().toLocaleDateString(&apos;pt-BR&apos;);&#xd;
+var parentFolder;&#xd;
+var calendar = java.util.Calendar.getInstance().getTime();&#xd;
+&#xd;
+&#xd;
+function beforeTaskSave(colleagueId, nextSequenceId, userList) {&#xd;
+	&#xd;
+	var ativAtual = getValue(&quot;WKNumState&quot;);&#xd;
+	log.info(&quot;ativAtual &quot; + ativAtual);&#xd;
+	if( nextSequenceId == 45){&#xd;
+		if(ativAtual != 34) {&#xd;
+			parentFolder = String(hAPI.getCardValue(&quot;parentFolder&quot;));&#xd;
+		getAttach();&#xd;
+		}&#xd;
+	}&#xd;
+	&#xd;
+	//sandro&#xd;
+	&#xd;
+	/*&#xd;
+	if( nextSequenceId == 195){ // Aprovação parecer juridicio&#xd;
+		if(ativAtual != 27) {&#xd;
+			parentFolder = String(hAPI.getCardValue(&quot;parentFolder&quot;));&#xd;
+		getAttach();&#xd;
+		}&#xd;
+	}	&#xd;
+	*/&#xd;
+	&#xd;
+	&#xd;
+}&#xd;
+&#xd;
+function executeWebservice(params, callback) {&#xd;
+	log.info(&quot;APROVACAO DOS PROJETOS - executeWebservice - params: &quot; +  jsonStringify(params));&#xd;
+&#xd;
+	&#xd;
+	&#xd;
+    var constraints = [];&#xd;
+&#xd;
+    params.forEach(function (param) {&#xd;
+        constraints.push(DatasetFactory.createConstraint(param.name, param.value, param.value, ConstraintType.MUST));&#xd;
+    });&#xd;
+&#xd;
+    if (constraints.length &gt; 0) {&#xd;
+        var dsAux = DatasetFactory.getDataset(&quot;ds_auxiliar_vertsign&quot;, null, constraints, null);&#xd;
+        log.info(&quot;SS SC ## - log.dir ds_auxiliar_vertsign &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&quot;);&#xd;
+        log.dir(dsAux);&#xd;
+        if (callback) {&#xd;
+        	if(dsAux == null || dsAux.rowsCount == null){&#xd;
+        		throw &quot;Falha de comunicação com a VertSign. &quot;&#xd;
+        		+ &quot;O TOTVS Fluig não conseguir realizar a comunicação, tente novamente mais tarde&quot;;&#xd;
+        	}&#xd;
+            if (dsAux.rowsCount &gt; 0) {&#xd;
+                if (dsAux.getValue(0, &quot;Result&quot;) === &quot;OK&quot;) {&#xd;
+                    callback();&#xd;
+                }&#xd;
+            }&#xd;
+        }&#xd;
+    }&#xd;
+    &#xd;
+}&#xd;
+&#xd;
+function getAttach() {&#xd;
+	log.info(&quot;entrando getAttach&quot;);&#xd;
+	var nome = &apos;&apos;&#xd;
+	var arraySigners = [];&#xd;
+    var anexos = new java.util.ArrayList();&#xd;
+    var docs = hAPI.listAttachments();&#xd;
+    var solicitacao = getValue(&quot;WKNumProces&quot;);&#xd;
+	var c1 = DatasetFactory.createConstraint(&apos;processInstanceId&apos;, solicitacao, solicitacao, ConstraintType.MUST);&#xd;
+	var mapaControle = [];&#xd;
+    var atividades = [22,26]&#xd;
+    &#xd;
+    for (var i = 0; i &lt; atividades.length; i++){&#xd;
+    	var c2 = DatasetFactory.createConstraint(&apos;choosedSequence&apos;, atividades[i], atividades[i], ConstraintType.MUST);&#xd;
+    	var tarefa = DatasetFactory.getDataset(&apos;processTask&apos;, [&quot;choosedColleagueId&quot;], [c1,c2], null);&#xd;
+    	if (tarefa &amp;&amp; tarefa.rowsCount &gt; 0) {	&#xd;
+			usuario = tarefa.getValue(tarefa.rowsCount-1, &quot;choosedColleagueId&quot;);&#xd;
+		}&#xd;
+    	log.info(&quot;usuario encontrato &quot; + usuario);&#xd;
+    	if(usuario == null || usuario == &quot;&quot;){&#xd;
+    		log.info(&quot;#### &gt;&gt; ERRO!&quot;)&#xd;
+    	}&#xd;
+    	&#xd;
+    	var user = getFluigUser(usuario);&#xd;
+    	var consUser = DatasetFactory.createConstraint(&apos;email&apos;, user.mail, user.mail, ConstraintType.MUST);&#xd;
+		var assinante = DatasetFactory.getDataset(&apos;ds_busca_assinante&apos;, null, [consUser], null);&#xd;
+		if (assinante &amp;&amp; assinante.rowsCount &gt; 0) {&#xd;
+			var mail = assinante.getValue(0, &quot;email&quot;);&#xd;
+		}&#xd;
+		log.info(&quot;#### &gt;&gt; MAPA DE CONTROLE&quot;)&#xd;
+		if(mapaControle.indexOf(String(mail))==-1){&#xd;
+			mapaControle.push(String(mail))&#xd;
+			log.info(&quot;#### &gt;&gt; &quot;+String(mail))&#xd;
+			JSON.stringify(mapaControle)&#xd;
+			&#xd;
+			arraySigners.push({&#xd;
+		        nome: new String(assinante.getValue(0, &quot;nome&quot;)),&#xd;
+		        email: new String(mail),&#xd;
+		        cpf: new String(assinante.getValue(0, &quot;cpf&quot;)),&#xd;
+		        tipo: new String(assinante.getValue(0, &quot;tipoAssinatura&quot;)), //&quot;E&quot;,&#xd;
+		        status: &quot;Pendente&quot;&#xd;
+		    });&#xd;
+			nome = new String(assinante.getValue(0, &quot;nome&quot;));&#xd;
+		}&#xd;
+    }&#xd;
+//    log.dir(arraySigners);&#xd;
+//    log.info(JSON.stringify(arraySigners));&#xd;
+//    return arraySigners;&#xd;
+//    &#xd;
+//    &#xd;
+//    &#xd;
+//    var cpf_diretor_adjunto = &quot;3833312e3634312e3534312d3030&quot;;&#xd;
+//    var cpf_diretora_executiva = &quot;3031392e3138392e3434312d3939&quot;;&#xd;
+//    &#xd;
+//    var arraySigners = []&#xd;
+//    &#xd;
+//    var constraint1 = DatasetFactory.createConstraint(&quot;cpf&quot;, cpf_diretor_adjunto, cpf_diretor_adjunto,ConstraintType.MUST);&#xd;
+//    var constraint2 = DatasetFactory.createConstraint(&quot;cpf&quot;, cpf_diretora_executiva, cpf_diretora_executiva,ConstraintType.MUST);&#xd;
+//    var constraints = new Array(constraint1);&#xd;
+//    var assinantes = DatasetFactory.getDataset(&quot;ds_vertsign_assinantes&quot;, null, constraints, null);&#xd;
+//	log.info(&quot;======= assinantes rowsCount: &quot; + assinantes.rowsCount);&#xd;
+//	for ( var x = 0; x &lt; assinantes.rowsCount; x++) {&#xd;
+//		var nome = assinantes.getValue(x, &quot;nome&quot;);&#xd;
+//		var email = assinantes.getValue(x, &quot;email&quot;);&#xd;
+//		var cpf = assinantes.getValue(x, &quot;cpf&quot;);&#xd;
+//		var tipo = assinantes.getValue(x, &quot;tipoAssinatura&quot;);&#xd;
+//		var cpf_formatado = hex2a(cpf);&#xd;
+//		var email_formatado = hex2a(email);&#xd;
+//		&#xd;
+//		log.info(&quot;Nome: &quot; + nome);&#xd;
+//		log.info(&quot;email &quot; + email);&#xd;
+//		log.info(&quot;cpf &quot; + cpf);&#xd;
+//		log.info(&quot;tipo &quot; + tipo);&#xd;
+//		log.info(&quot;cpf_formatado &quot; + cpf_formatado);&#xd;
+//		log.info(&quot;email_formatado &quot; + email_formatado);&#xd;
+//		&#xd;
+//		arraySigners.push({&#xd;
+//	        nome: nome,&#xd;
+//	        email: email_formatado,&#xd;
+//	        cpf: cpf_formatado,&#xd;
+//	        tipo: tipo,&#xd;
+//	        status: &quot;Pendente&quot;&#xd;
+//	    });&#xd;
+//		&#xd;
+//&#xd;
+//	}&#xd;
+    &#xd;
+    log.info(&quot;arraySigners &quot; + arraySigners);&#xd;
+    log.info(&quot;jsonStringify(arraySigners)&quot; + jsonStringify(arraySigners));&#xd;
+    if (docs.size() &gt; 0) {&#xd;
+        for (var i = 0; i &lt; docs.size(); i++) {&#xd;
+            var doc = docs.get(i);&#xd;
+&#xd;
+            var idAnexo = doc.getDocumentId();&#xd;
+            var vrAnexo = doc.getVersion();&#xd;
+            var dsAnexo = doc.getDocumentDescription();&#xd;
+&#xd;
+            // Cria o documento na pasta informada&#xd;
+            createDocument(doc, parentFolder);&#xd;
+&#xd;
+            // Cria registro de formulario&#xd;
+            var nmArquivo = {&#xd;
+                name: &quot;nmArquivo&quot;,&#xd;
+                value: dsAnexo&#xd;
+            };&#xd;
+            var codArquivo = {&#xd;
+                name: &quot;codArquivo&quot;,&#xd;
+                value: idAnexo&#xd;
+            };&#xd;
+            var vrArquivo = {&#xd;
+                name: &quot;vrArquivo&quot;,&#xd;
+                value: vrAnexo&#xd;
+            };&#xd;
+            var codPasta = {&#xd;
+                name: &quot;codPasta&quot;,&#xd;
+                value: parentFolder&#xd;
+            };&#xd;
+            var codRemetente = {&#xd;
+                name: &quot;codRemetente&quot;,&#xd;
+                value: getValue(&quot;WKUser&quot;)&#xd;
+            };&#xd;
+            var nmRemetente = {&#xd;
+	                name: &quot;nmRemetente&quot;,&#xd;
+	                value: nome&#xd;
+	        };&#xd;
+            var formDescription = {&#xd;
+                name: &quot;formDescription&quot;,&#xd;
+                value: dsAnexo&#xd;
+            };&#xd;
+            var status = {&#xd;
+                name: &quot;status&quot;,&#xd;
+                value: &quot;Enviando para assinatura&quot;&#xd;
+            };&#xd;
+            var metodo = {&#xd;
+                name: &quot;metodo&quot;,&#xd;
+                value: &quot;create&quot;&#xd;
+            };&#xd;
+&#xd;
+            var dataEnvio = {&#xd;
+                name: &quot;dataEnvio&quot;,&#xd;
+                value: hoje&#xd;
+            };&#xd;
+            var jsonSigners = {&#xd;
+                    name: &quot;jsonSigners&quot;,&#xd;
+                    value: jsonStringify(arraySigners)&#xd;
+                };&#xd;
+            &#xd;
+            var horaEnvio = {&#xd;
+                name: &quot;horaEnvio&quot;,&#xd;
+                value: horario2&#xd;
+            };&#xd;
+            &#xd;
+            var numSolic = {&#xd;
+            	name: &quot;numSolic&quot;,&#xd;
+                value: getValue(&quot;WKNumProces&quot;)            		&#xd;
+            };&#xd;
+            &#xd;
+            var choosedState = {&#xd;
+            	name: &quot;choosedState&quot;,&#xd;
+                value: &quot;45&quot;            		&#xd;
+            };  &#xd;
+            &#xd;
+&#xd;
+            var constraints = [jsonSigners, nmArquivo, codArquivo, vrArquivo, codPasta, codRemetente, nmRemetente, formDescription, status, metodo, dataEnvio, horaEnvio, numSolic, choosedState];&#xd;
+            log.info(constraints)&#xd;
+            &#xd;
+            executeWebservice(constraints, function () {&#xd;
+                log.info(&quot;Enviando documento para assinatura&quot;);&#xd;
+            })&#xd;
+        }&#xd;
+&#xd;
+    } else {&#xd;
+        //throw &quot;É preciso anexar o documento para continuar o processo!&quot;;&#xd;
+    	//provisorio pois não está enviado docs para o vert sign  &#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+function createDocument(document, parentFolder) {&#xd;
+&#xd;
+    if (document &amp;&amp; parentFolder) {&#xd;
+        document.setParentDocumentId(Number(parentFolder));&#xd;
+        document.setVersionDescription(&quot;Processo: &quot; + getValue(&quot;WKNumProces&quot;));&#xd;
+        document.setExpires(false);&#xd;
+        document.setCreateDate(calendar);&#xd;
+        document.setInheritSecurity(true);&#xd;
+        document.setTopicId(1);&#xd;
+        document.setUserNotify(false);&#xd;
+        document.setValidationStartDate(calendar);&#xd;
+        document.setVersionOption(&quot;0&quot;);&#xd;
+        document.setUpdateIsoProperties(true);&#xd;
+&#xd;
+        // Publica o documento&#xd;
+        //hAPI.publishWorkflowAttachment(document);&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+function jsonStringify(obj) {&#xd;
+	if(obj == null) {&#xd;
+	    return &quot;null&quot;;&#xd;
+	} else if(Object.prototype.toString.call(obj) === &apos;[object Array]&apos;) {&#xd;
+	    var str = &quot;[&quot;;&#xd;
+	    if(obj.length &gt; 0) {&#xd;
+	      str += jsonStringify(obj[0]);&#xd;
+	      for(var i = 1; i &lt; obj.length; i++) {&#xd;
+	        str += &quot;,&quot; + jsonStringify(obj[i]);&#xd;
+	      }&#xd;
+	    }&#xd;
+	    str += &quot;]&quot;;&#xd;
+	    return str;&#xd;
+	} else if(Object.prototype.toString.call(obj) === &apos;[object Object]&apos;) {&#xd;
+	    var str = &quot;{&quot;;&#xd;
+	    var first = true;&#xd;
+	    for(attr in obj) {&#xd;
+	      str += (!first ? &quot;,&quot; : &quot;&quot;) + &quot;\&quot;&quot; + attr + &quot;\&quot;:&quot; + jsonStringify(obj[attr]);&#xd;
+	      first = false;&#xd;
+	    }&#xd;
+	    str += &quot;}&quot;;&#xd;
+	    return str;&#xd;
+	} else {&#xd;
+	    return &quot;\&quot;&quot; + obj + &quot;\&quot;&quot;;&#xd;
+	}&#xd;
+};&#xd;
+&#xd;
+function getFluigUser(colleagueId){&#xd;
+	log.info(&quot;SolicitacaoCompras - getFluigUser - colleagueId: &quot; + colleagueId);&#xd;
+	var company = getValue(&quot;WKCompany&quot;);&#xd;
+	var user = {&quot;colleagueName&quot;:&quot;&quot;,&quot;login&quot;:&quot;&quot;,&quot;mail&quot;:&quot;&quot;};&#xd;
+	&#xd;
+	var constraints = [];&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;colleaguePK.companyId&quot;, company, company, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;colleaguePK.colleagueId&quot;, colleagueId, colleagueId, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;active&quot;, true, true, ConstraintType.MUST));&#xd;
+	&#xd;
+	var fields = [ &quot;colleagueName&quot;, &quot;login&quot;, &quot;mail&quot; ];&#xd;
+	var dataset = DatasetFactory.getDataset(&quot;colleague&quot;, fields, constraints, null);&#xd;
+	if(dataset.rowsCount &gt; 0) {&#xd;
+		user.colleagueName = dataset.getValue(0,&quot;colleagueName&quot;);&#xd;
+		user.login = dataset.getValue(0,&quot;login&quot;);&#xd;
+		user.mail = dataset.getValue(0,&quot;mail&quot;);&#xd;
+	}&#xd;
+	else{&#xd;
+		log.error(&quot;Usuario nao encontrado para a matricula: &quot;+colleagueId);&#xd;
+		throw(&quot;Usuario inativo nao encontrado para a matricula: &quot;+colleagueId);&#xd;
+	}&#xd;
+	&#xd;
+	return user;&#xd;
+}&#xd;
+&#xd;
+&#xd;
+function hex2a(r){for(var t=String(r),n=&quot;&quot;,e=0;e&lt;t.length&amp;&amp;&quot;00&quot;!==t.substr(e,2);e+=2)n+=String.fromCharCode(parseInt(t.substr(e,2),16));return n}function a2hex(r){for(var t=[],n=0,e=(r=String(r)).length;n&lt;e;n++){var o=Number(r.charCodeAt(n)).toString(16);t.push(o)}return t.join(&quot;&quot;)}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask45</eventId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask45(attempt, message) {
+	log.info(&quot;atividade integração vertsign&quot;)
+	
+	try {
+		
+		var solicitacao = getValue(&quot;WKNumProces&quot;);
+		
+		log.info(&quot;&gt;&gt;&gt; Vertsign - BPM - Enviando documento para assinatura&quot;);	
+		log.info(&quot;&gt;&gt;&gt; Solicitacao: &quot; + solicitacao);
+		
+		var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);
+		var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
+		
+		if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {
+			
+			log.info(&quot;&gt;&gt;&gt; Formulario Auxiliar: &quot; + form_aux.rowsCount);
+			log.info(&quot;&gt;&gt;&gt; Enviando arquivo: &quot; + form_aux.getValue(0, &apos;codArquivo&apos;));
+			
+			var c2 = DatasetFactory.createConstraint(&apos;codArquivo&apos;, form_aux.getValue(0, &apos;codArquivo&apos;), form_aux.getValue(0, &apos;codArquivo&apos;), ConstraintType.MUST);
+			var ds_upload = DatasetFactory.getDataset(&quot;ds_upload_vertsign_manual&quot;, null, [c2], null);
+			
+			if (ds_upload){				
+				
+				form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
+				if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {
+					log.info(&quot;&gt;&gt;&gt; Status do Documento: &quot; + form_aux.getValue(0, &quot;statusAssinatura&quot;));	
+					
+					if (form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Enviando para assinatura&quot;){
+						throw &quot;Houve erros durante o envio do documento, verifique novamente.&quot;;
+					}
+				}
+				
+							
+			};
+		} else {
+			throw &quot;Não foi possível localizar Formulário Auxiliar com o código da solicitação&quot;;
+		}
+	} catch (e) {
+		throw (&quot;Erro ao enviar documento para integração: &quot; + (e));
+	}
+	log.info(&quot;fim integração vertsign&quot;);
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask54</eventId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask54(attempt, message) {
+	log.info(&quot;anexando o doc ao processo&quot;);
+	hAPI.attachDocument(hAPI.getCardValue(&quot;nr_doc_form&quot;));
+	log.info(&quot;doc anexado ao processo&quot;);
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeStateEntry</eventId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeStateEntry(sequenceId){&#xd;
+	if(sequenceId == 45){&#xd;
+		//hAPI.attachDocument(hAPI.getCardValue(&quot;nr_doc_form&quot;));&#xd;
+	}&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>intermediateconditional51</eventId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function intermediateconditional51() {
+	var solicitacao = getValue(&quot;WKNumProces&quot;);
+	var finalizado  = false;
+	
+	log.info(&quot;&gt;&gt;&gt; Vertsign - BPM - Verificando status do documento&quot;);	
+	log.info(&quot;&gt;&gt;&gt; Solicitacao: &quot; + solicitacao);
+	
+	var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);
+	var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
+	
+	if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {		
+		
+		log.info(&quot;&gt;&gt;&gt; Status do Documento: &quot; + form_aux.getValue(0, &quot;statusAssinatura&quot;));
+		
+		if (form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Assinado&quot;  ||
+			form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Rejeitado&quot; ||
+			form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Cancelado&quot;){
+			finalizado = true;
+		}
+	} else {
+		log.info(&quot;&gt;&gt;&gt; Não localizado Formulário Auxiliar, irá finalizar com erros&quot;);
+		finalizado = true;
+	}
+	
+	return finalizado;
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list>
+    <SwimLane>
+      <color>82b0b7</color>
+      <height>145</height>
+      <width>1931</width>
+      <positionX>20</positionX>
+      <positionY>10</positionY>
+      <stateName>Solicitante</stateName>
+      <type>2</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>d6e0d0</color>
+      <height>191</height>
+      <width>1931</width>
+      <positionX>20</positionX>
+      <positionY>550</positionY>
+      <stateName>GePLAN</stateName>
+      <type>2</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>adc9ac</color>
+      <height>197</height>
+      <width>1931</width>
+      <positionX>20</positionX>
+      <positionY>154</positionY>
+      <stateName>Responsável pelo Projeto</stateName>
+      <type>2</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>3</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>c9c3ac</color>
+      <height>261</height>
+      <width>1931</width>
+      <positionX>20</positionX>
+      <positionY>740</positionY>
+      <stateName>Diretoria</stateName>
+      <type>2</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>d0daae</color>
+      <height>201</height>
+      <width>1931</width>
+      <positionX>20</positionX>
+      <positionY>350</positionY>
+      <stateName>Resp pelo Objetivo Estratégico</stateName>
+      <type>2</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>1</version>
+        <sequence>5</sequence>
+      </swimLanePK>
+    </SwimLane>
+  </list>
+  <list/>
+  <list/>
+  <list>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>37</version>
+        <linkSequence>44</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>162</positionX>
+      <positionY>305</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>37</version>
+        <linkSequence>44</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>162</positionX>
+      <positionY>632</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>37</version>
+        <linkSequence>69</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>1339</positionX>
+      <positionY>647</positionY>
+    </ProcessLinkBend>
+  </list>
+  <list>
+    <ProcessStateTrigger>
+      <processStateTriggerPK>
+        <companyId>1</companyId>
+        <processId>aprovacao_projeto_dex1</processId>
+        <version>37</version>
+        <stateSequence>51</stateSequence>
+        <triggerSequence>0</triggerSequence>
+      </processStateTriggerPK>
+      <runType>0</runType>
+      <type>3</type>
+      <value>aprovacao_projeto_dex1.intermediateconditional51.js</value>
+      <timeTrigger>0:0:0</timeTrigger>
+      <frequencia>01</frequencia>
+    </ProcessStateTrigger>
+  </list>
+  <list/>
+  <list/>
+  <list>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>aprovacao_projeto_dex1</processId>
+      <version>1</version>
+      <sequence>45</sequence>
+      <attempts>0</attempts>
+      <sucessFullMessage>Integration performed successfully</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>aprovacao_projeto_dex1</processId>
+      <version>1</version>
+      <sequence>54</sequence>
+      <attempts>0</attempts>
+      <sucessFullMessage>Integration performed successfully</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list>
+    <ConditionProcessAutomaticRules>
+      <sequence>12</sequence>
+      <expressionOrder>1</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Aprova_GP</field>
+      <value>Necessário ajustar</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>12</sequence>
+      <expressionOrder>2</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Aprova_GP</field>
+      <value>Sim</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>12</sequence>
+      <expressionOrder>3</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Aprova_GP</field>
+      <value>sim_nao_responsavel</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>15</sequence>
+      <expressionOrder>1</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Aprova_R_OE</field>
+      <value>Sim</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>15</sequence>
+      <expressionOrder>2</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Aprova_R_OE</field>
+      <value>Necessário ajustar</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>20</sequence>
+      <expressionOrder>1</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Valida_PE</field>
+      <value>Sim</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>20</sequence>
+      <expressionOrder>2</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Valida_PE</field>
+      <value>Necessário ajustar</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>24</sequence>
+      <expressionOrder>1</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Aprova_D_Adjunt</field>
+      <value>Sim</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>24</sequence>
+      <expressionOrder>2</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Aprova_D_Adjunt</field>
+      <value>Não</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>24</sequence>
+      <expressionOrder>3</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Aprova_D_Adjunt</field>
+      <value>Necessário ajustar</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>28</sequence>
+      <expressionOrder>1</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Aprova_D_Execut</field>
+      <value>Sim</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>28</sequence>
+      <expressionOrder>2</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Aprova_D_Execut</field>
+      <value>Não</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>28</sequence>
+      <expressionOrder>3</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Aprova_D_Execut</field>
+      <value>Necessário ajustar</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>66</sequence>
+      <expressionOrder>1</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Aprova_D_Execut</field>
+      <value>Sim</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>66</sequence>
+      <expressionOrder>2</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>Ajustes_D_Execu</field>
+      <value>Sim</value>
+      <operator>2</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+  </list>
+</list>

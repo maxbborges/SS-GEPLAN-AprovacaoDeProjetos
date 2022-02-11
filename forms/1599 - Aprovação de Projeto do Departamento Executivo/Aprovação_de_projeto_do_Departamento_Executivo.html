@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aprovação de projeto do Departamento Executivo</title>
+
+	<link rel="stylesheet" type="text/css" href="/style-guide/css/fluig-style-guide.min.css">
+	<script src="/resources/js/jquery/jquery.js"></script>
+	<script src="/resources/js/jquery/jquery-ui.min.js"></script>
+	<script src="/resources/js/mustache/mustache-min.js"></script>
+	<script src="/style-guide/js/fluig-style-guide.min.js"></script>
+	<script type="text/javascript" src="/webdesk/vcXMLRPC.js" charset="utf-8"></script>
+	
+	<!-- CUSTOM -->
+	<link href="custom.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="html2canvas.js"></script>
+	<script src="jspdf.min.js"></script>
+	<script type="text/javascript" src="activities.js"></script>
+	<script type="text/javascript" src="jquery.maskMoney.js"></script>
+	<script type="text/javascript" src="jquery.printelement.js"></script>
+	<script type="text/javascript" src="utils.js"></script>
+	<script type="text/javascript" src="zooms.js"></script>
+	<script type="text/javascript" src="scopi.js"></script>
+	<script type="text/javascript" src="custom.js"></script>
+</head>
+<body class="fluig-style-guide">
+	<div class="fluig-style-guide">
+		<form name="form" role="form">
+			<div id="form_content">
+			<input type="hidden" name="nr_doc_form" id="nr_doc_form" value="">
+			<input type="hidden" name="gerar_pdf" id="gerar_pdf" value="">
+			<input type="hidden" id="hd_controleAssinatura" name="hd_controleAssinatura" value="" />
+			<input type="hidden" id="parentFolder" name="parentFolder" value="1096" />
+			<input type="hidden" name="matr_dir_adjunto" id="matr_dir_adjunto">
+			<input type="hidden" name="matr_dir_executiva" id="matr_dir_executiva">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h1>
+						<b>Aprovação de projeto do Departamento Executivo</b> 
+					</h1>
+				</div>
+			</div>
+			<div class="panel panel-info" id="panel_projeto">
+				<div class="panel-heading ">
+					<h3 class="panel-title">
+						<b>Projeto</b>
+					</h3>
+				</div>
+				<div class="panel-body">
+					<div class="form-group row">
+						<div class="col-xs-4 col-md-2"><!-- NOVO -->
+							<label for="id_projeto" class="required">Id Projeto</label>
+							<div class="input-group">
+								<input type="text" class="form-control" name="id_projeto" id="id_projeto" readonly />
+								<span class="input-group-addon hidden" id="atualizarDadosProjeto">
+									<i class="flaticon flaticon-refresh icon-sm"></i>
+								</span>
+							</div>
+						</div>
+						<div class="col-xs-8 col-md-6">
+							<label for="Nome_do_projeto" class="required">Projeto</label>
+							<input type="zoom" class="form-control" name="Nome_do_projeto" id="Nome_do_projeto" 
+								data-zoom="{
+						        'displayKey':'name',
+						        'datasetId':'scopi_consulta_projetos',
+						        'maximumSelectionLength':'1',
+						        'placeholder':'Selecione o projeto Scopi',
+						        'fields':[
+						            {
+						               'field':'id',
+						               'label':'ID'
+						            },{
+						              'field':'name',
+						              'label':'Nome do projeto'
+						            }
+						        ]
+						     }"/>
+						</div>
+						<div class="col-md-4">
+							<label for="publico_alvo" class="required">Público-alvo</label>
+							<input type="text" class="form-control" name="publico_alvo" id="publico_alvo"
+								placeholder="Público-alvo atendido pelo projeto" />
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-12">
+							<label for="Sumario_executi" class="required">Sumário Executivo</label>
+							<textarea class="form-control" name="Sumario_executi" id="Sumario_executi"
+								rows="3" readonly 
+								placeholder="Esta seção destaca as informações de alto nível mais essenciais sobre o investimento proposto. Deve resumir, em um parágrafo, a necessidade do negócio para o investimento, as principais premissas que sustentam o sucesso do investimento, requisitos de recursos, objetivos (resultados desejados mensuráveis e com prazo determinado) e retornos estimados."></textarea>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-xs-6 col-md-4">
+							<label for="area_responsave" class="required">Área Responsável</label>
+							<input type="hidden" name="id_area_responsavel" id="id_area_responsavel" />
+							<input type="text" class="form-control" name="area_responsave" id="area_responsave" readonly/>
+						</div>
+						<div class="col-xs-6 col-md-4">
+							<label for="resp_pelo_proj" class="required">Responsável pelo projeto</label>
+							<input type="hidden" name="cd_resp_pelo_proj" id="cd_resp_pelo_proj" />
+							<input type="hidden" name="id_resp_pelo_proj" id="id_resp_pelo_proj" />
+							<input type="text" class="form-control" name="resp_pelo_proj" id="resp_pelo_proj" readonly />
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-xs-6 col-md-4">
+							<label for="Selecao_OE" class="required">Objetivo estratégico</label>
+							<input type="hidden" name="cd_selecao_OE" id="cd_selecao_OE" />
+							<input type="text" name="Selecao_OE" id="Selecao_OE" class="form-control" readonly="readonly">
+							<!-- 
+							<input type="zoom" class="form-control" name="Selecao_OE" id="Selecao_OE" 
+								data-zoom="{
+						        'displayKey':'objetivoEstrategico',
+						        'datasetId':'sest_objetivos_estrategicos',
+						        'maximumSelectionLength':'1',
+						        'placeholder':'Escolha o objetivo estratégico',
+						        'fields':[
+						            {
+						               'field':'codigoObjetivo',
+						               'label':'ID'
+						            },{
+						              'field':'objetivoEstrategico',
+						              'label':'Objetivo',
+						              'standard':'true'
+						            },{
+						              'field':'matriculaResponsavel',
+						              'label':'Matrícula responsável',
+						              'visible':'false'
+						            },{
+						              'field':'responsavel',
+						              'label':'Responsável',
+						              'visible':'false'
+						            }
+						        ]
+						     }"/>
+						     -->
+						</div>
+						<div class="col-xs-6 col-md-4"><!-- NOVO -->
+							<label for="gestor_OE" class="required">Gestor do objetivo estratégico</label>
+							<input type="hidden" name="matricula_gestor_OE" id="matricula_gestor_OE" />
+							<input type="text" class="form-control" name="gestor_OE" id="gestor_OE" readonly />
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-xs-8 col-md-6">
+							<label for="link_scopi" class="required">Endereço do projeto no SCOPI</label>
+							<input type="text" class="form-control" name="link_scopi" id="link_scopi" readonly />
+						</div>
+						<div class="col-xs-4 col-md-6">
+							<br/>
+							<a href="#" id="link_renderizado" target="Fluig_Scopi">Abrir projeto no Scopi</a>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-xs-6 col-md-4">
+							<label for="data_inicio" class="required">Data de previsão de início</label>
+							<div class="input-group">
+								<input type="text" class="form-control" name="data_inicio" id="data_inicio" readonly />
+								<span class="input-group-addon"><i class="flaticon flaticon-calendar icon-sm"></i></span>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-4">
+							<label for="data_fim" class="required">Data de previsão de fim</label>
+							<div class="input-group">
+								<input type="text" class="form-control" name="data_fim" id="data_fim" readonly />
+								<span class="input-group-addon"><i class="flaticon flaticon-calendar icon-sm"></i></span>
+							</div>
+						</div>
+					</div>
+					<br/>
+					<div class="form-group row">
+						<fieldset>
+							<legend>Valor por entidade</legend>
+							<div class="col-md-12">
+								<table tablename="tabledetailname1" class="table" noaddbutton="true">
+									<thead>
+										<tr class="tableHeadRow">
+											<th class="tableColumn">ANO</th>
+											<th class="tableColumn">SEST</th>
+											<th class="tableColumn">SENAT</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="tableBodyRow">
+											<td class="fs-v-align-middle">
+												<div class="input-group">
+													<input type="text" name="column1_1" 
+														class="form-control year" mask="0000"
+														placeholder="Informe o ano do orçamento" />
+													<span class="input-group-addon"><i class="flaticon flaticon-calendar icon-sm"></i></span>
+												</div>
+											</td>
+											<td class="fs-v-align-middle">
+												<div class="input-group">
+													<input type="text" name="column2_1" 
+														class="form-control money"
+														placeholder="Informe o valor para SEST" />
+													<span class="input-group-addon"><i class="flaticon flaticon-monetization-on icon-sm"></i></span>
+												</div>
+											</td>
+											<td class="fs-v-align-middle">
+												<div class="input-group">
+													<input type="text" name="column3_1" 
+														class="form-control money"
+														placeholder="Informe o valor para SENAT" />
+													<span class="input-group-addon"><i class="flaticon flaticon-monetization-on icon-sm"></i></span>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<button type="button" class="btn btn-primary hidden" 
+									id="addValoresEntidade">Adicionar ano</button>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+			</div><!-- fim panel_projeto -->
+			
+			<div class="panel panel-info" id="panel_resp_projeto" style="display:none">
+				<div class="panel-heading ">
+					<h3 class="panel-title">
+						<b>Aprovação - Responsável pelo projeto</b>
+					</h3>
+				</div>
+				<div class="panel-body">
+					<div class="form-group row">
+						<div class="col-xs-6 col-md-4">
+							<label class="required">Aprovado pelo Responsável pelo projeto?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="Aprova_GP" value="Sim" />Sim e sou responsável pelo Objetivo Estratégico</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="Aprova_GP" value="sim_nao_responsavel" />Sim e não sou responsável pelo Objetivo Estratégico</label>
+								</div>
+								<div class="radio esconde_impressao">
+									<label><input type="radio" name="Aprova_GP"
+										value="Necessário ajustar" />Necessário ajustar</label>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-8 not-printable esconde_impressao">
+							<label for="Ajustes_RP" class="">Ajustes necessários sugeridos pelo Responsável pelo projeto</label>
+							<textarea class="form-control" rows="3" name="Ajustes_RP"
+								placeholder="Insira os ajustes necessários após leitura das informações deste formulário e consulta do projeto no SCOPI"></textarea>
+						</div>
+					</div>
+				</div>
+			</div><!-- fim panel_resp_projeto -->
+			
+			<div class="panel panel-info" id="panel_resp_objetivo" style="display:none">
+				<div class="panel-heading ">
+					<h3 class="panel-title">
+						<b>Aprovação - Responsável pelo objetivo estratégico</b>
+					</h3>
+				</div>
+				<div class="panel-body">
+					<div class="form-group row">
+						<div class="col-xs-6 col-md-4">
+							<label class="required">Aprovado pelo Responsável pelo Objetivo Estratégico?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="Aprova_R_OE" value="Sim" />Sim</label>
+								</div>
+								<div class="radio esconde_impressao">
+									<label><input type="radio" name="Aprova_R_OE"
+										value="Necessário ajustar" />Necessário ajustar</label>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-8 not-printable esconde_impressao">
+							<label for="Ajustes_R_OE" class="">Ajustes necessários sugeridos pelo Responsável pelo
+								Objetivo Estratégico</label>
+							<textarea class="form-control" rows="3" name="Ajustes_R_OE"
+								placeholder="Insira os ajustes necessários após leitura das informações deste formulário e consulta do projeto no SCOPI"></textarea>
+						</div>
+					</div>
+				</div>
+			</div><!-- fim panel_resp_objetivo -->
+
+			<div class="panel panel-info" id="panel_geplan" style="display:none">
+				<div class="panel-heading ">
+					<h3 class="panel-title">
+						<b>Validação - Planejamento estratégico</b>
+					</h3>
+				</div>
+				<div class="panel-body">
+					<div class="form-group row">
+						<div class="col-xs-6 col-md-4">
+							<label class="required">Validado pelo Planejamento Estratégico?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="Valida_PE" value="Sim" />Sim</label>
+								</div>
+								<div class="radio esconde_impressao">
+									<label><input type="radio" name="Valida_PE"
+										value="Necessário ajustar" />Necessário ajustar</label>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-md-8 not-printable esconde_impressao">
+							<label for="Ajustes_P_E" class="">Ajustes necessários sugeridos pelo Planejamento Estratégico</label>
+							<textarea class="form-control" rows="3" name="Ajustes_P_E"
+								placeholder="Insira os ajustes necessários após leitura das informações deste formulário e consulta do projeto no SCOPI"></textarea>
+						</div>
+					</div>
+				</div>
+			</div><!-- fim panel_geplan -->
+			
+			<div class="panel panel-info" id="panel_dir_adjunto" style="display:none">
+				<div class="panel-heading ">
+					<h3 class="panel-title">
+						<b>Aprovação - Diretor adjunto</b>
+					</h3>
+				</div>
+				<div class="panel-body">
+					<div class="form-group row">
+						<div class="col-xs-6 col-md-4">
+							<label class="required">Aprovado pelo Diretor(a) Adjunto(a)?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="Aprova_D_Adjunt"
+										value="Sim" />Sim</label>
+								</div>
+								<div class="radio esconde_impressao">
+									<label><input type="radio" name="Aprova_D_Adjunt"
+										value="Necessário ajustar" />Necessário ajustar</label>
+								</div>
+								<div class="radio esconde_impressao">
+									<label><input type="radio" name="Aprova_D_Adjunt"
+										value="Não" />Não</label>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-md-8 not-printable esconde_impressao">
+							<label for="Ajustes_D_Adju" class="">Ajustes necessários sugeridos pelo Diretor Adjunto</label>
+							<textarea class="form-control" rows="3" name="Ajustes_D_Adju"
+								placeholder="Insira os ajustes necessários após leitura das informações deste formulário e consulta do projeto no SCOPI"></textarea>
+						</div>
+					</div>
+				</div>
+			</div><!-- fim panel_dir_adjunto -->
+			
+			<div class="panel panel-info" id="panel_dir_executivo" style="display:none">
+				<div class="panel-heading ">
+					<h3 class="panel-title">
+						<b>Aprovação - Diretora Executiva</b>
+					</h3>
+				</div>
+				<div class="panel-body">
+					<div class="form-group row">
+						<div class="col-xs-6 col-md-4">
+							<label class="required">Aprovado pela Diretora Executiva?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="Aprova_D_Execut" onclick="MAIN.habilitarGeracaoPDF()" value="Sim" />Sim</label>
+								</div>
+								<div class="radio esconde_impressao">
+									<label><input type="radio" name="Aprova_D_Execut" onclick="MAIN.desabilitarGeracaoPDF()" value="Necessário ajustar" />Necessário ajustar</label>
+								</div>
+								<div class="radio esconde_impressao">
+									<label><input type="radio" name="Aprova_D_Execut" onclick="MAIN.desabilitarGeracaoPDF()" value="Não" />Não</label>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-md-8 not-printable esconde_impressao">
+							<label for="Ajustes_D_Execu" class="">Ajustes necessários sugeridos pela Diretora Executiva</label>
+							<textarea class="form-control" rows="3" name="Ajustes_D_Execu"
+								placeholder="Insira os ajustes necessários após leitura das informações deste formulário e consulta do projeto no SCOPI"></textarea>
+						</div>
+					</div>
+					<div class="form-group row" id="div_gerar_pdf">
+						<button type="button" class="btn btn-primary" onclick="MAIN.testePDF()">Gerar PDF</button>
+					</div>
+				</div>
+			</div><!-- fim panel_dir_executivo -->
+
+			<div class="panel panel-info" id="panel_consideracoes" style="display:none">
+				<div class="panel-heading ">
+					<h3 class="panel-title">
+						<b>Considerações do solicitante</b>
+					</h3>
+				</div>
+				<div class="panel-body">
+					<div class="form-group row">
+						<div class="col-md-8 not-printable">
+							<label for="Ajustes_Conside" class="required">Considerações sobre os ajustes solicitados</label>
+							<textarea class="form-control" rows="3" name="Ajustes_Conside" id="Ajustes_Conside"
+								placeholder="O solicitante deve utilizar este campo para inserir alguma consideração sobre os ajustes solicitados"></textarea>
+						</div>
+					</div>
+				</div>
+			</div><!-- fim panel_consideracoes -->
+			<button class="btn btn-default" type="button" onclick="MAIN.imprimirCustom()" id="printBt" style="">Imprimir</button>
+			
+			</div>
+		</form>
+	</div>
+</body>
+</html>
