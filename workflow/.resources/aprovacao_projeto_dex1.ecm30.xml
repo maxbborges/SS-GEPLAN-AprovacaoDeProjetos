@@ -942,7 +942,7 @@
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>false</inhibitTransfer>
       <periodId></periodId>
-      <stateType>0</stateType>
+      <stateType>6</stateType>
       <bpmnType>60</bpmnType>
       <signalId>0</signalId>
       <counterSign>false</counterSign>
@@ -989,7 +989,7 @@
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>false</inhibitTransfer>
       <periodId></periodId>
-      <stateType>0</stateType>
+      <stateType>6</stateType>
       <bpmnType>60</bpmnType>
       <signalId>0</signalId>
       <counterSign>false</counterSign>
@@ -1036,7 +1036,7 @@
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>false</inhibitTransfer>
       <periodId></periodId>
-      <stateType>0</stateType>
+      <stateType>6</stateType>
       <bpmnType>60</bpmnType>
       <signalId>0</signalId>
       <counterSign>false</counterSign>
@@ -2052,47 +2052,47 @@ function hex2a(r){for(var t=String(r),n=&quot;&quot;,e=0;e&lt;t.length&amp;&amp;
         <processId>aprovacao_projeto_dex1</processId>
         <version>1</version>
       </workflowProcessEventPK>
-      <eventDescription>function servicetask45(attempt, message) {
-	log.info(&quot;atividade integração vertsign&quot;)
-	
-	try {
-		
-		var solicitacao = getValue(&quot;WKNumProces&quot;);
-		
-		log.info(&quot;&gt;&gt;&gt; Vertsign - BPM - Enviando documento para assinatura&quot;);	
-		log.info(&quot;&gt;&gt;&gt; Solicitacao: &quot; + solicitacao);
-		
-		var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);
-		var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
-		
-		if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {
-			
-			log.info(&quot;&gt;&gt;&gt; Formulario Auxiliar: &quot; + form_aux.rowsCount);
-			log.info(&quot;&gt;&gt;&gt; Enviando arquivo: &quot; + form_aux.getValue(0, &apos;codArquivo&apos;));
-			
-			var c2 = DatasetFactory.createConstraint(&apos;codArquivo&apos;, form_aux.getValue(0, &apos;codArquivo&apos;), form_aux.getValue(0, &apos;codArquivo&apos;), ConstraintType.MUST);
-			var ds_upload = DatasetFactory.getDataset(&quot;ds_upload_vertsign_manual&quot;, null, [c2], null);
-			
-			if (ds_upload){				
-				
-				form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
-				if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {
-					log.info(&quot;&gt;&gt;&gt; Status do Documento: &quot; + form_aux.getValue(0, &quot;statusAssinatura&quot;));	
-					
-					if (form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Enviando para assinatura&quot;){
-						throw &quot;Houve erros durante o envio do documento, verifique novamente.&quot;;
-					}
-				}
-				
-							
-			};
-		} else {
-			throw &quot;Não foi possível localizar Formulário Auxiliar com o código da solicitação&quot;;
-		}
-	} catch (e) {
-		throw (&quot;Erro ao enviar documento para integração: &quot; + (e));
-	}
-	log.info(&quot;fim integração vertsign&quot;);
+      <eventDescription>function servicetask45(attempt, message) {&#xd;
+	log.info(&quot;atividade integração vertsign&quot;)&#xd;
+	&#xd;
+	try {&#xd;
+		&#xd;
+		var solicitacao = getValue(&quot;WKNumProces&quot;);&#xd;
+		&#xd;
+		log.info(&quot;&gt;&gt;&gt; Vertsign - BPM - Enviando documento para assinatura&quot;);	&#xd;
+		log.info(&quot;&gt;&gt;&gt; Solicitacao: &quot; + solicitacao);&#xd;
+		&#xd;
+		var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);&#xd;
+		var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);&#xd;
+		&#xd;
+		if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {&#xd;
+			&#xd;
+			log.info(&quot;&gt;&gt;&gt; Formulario Auxiliar: &quot; + form_aux.rowsCount);&#xd;
+			log.info(&quot;&gt;&gt;&gt; Enviando arquivo: &quot; + form_aux.getValue(0, &apos;codArquivo&apos;));&#xd;
+			&#xd;
+			var c2 = DatasetFactory.createConstraint(&apos;codArquivo&apos;, form_aux.getValue(0, &apos;codArquivo&apos;), form_aux.getValue(0, &apos;codArquivo&apos;), ConstraintType.MUST);&#xd;
+			var ds_upload = DatasetFactory.getDataset(&quot;ds_upload_vertsign_manual&quot;, null, [c2], null);&#xd;
+			&#xd;
+			if (ds_upload){				&#xd;
+				&#xd;
+				form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);&#xd;
+				if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {&#xd;
+					log.info(&quot;&gt;&gt;&gt; Status do Documento: &quot; + form_aux.getValue(0, &quot;statusAssinatura&quot;));	&#xd;
+					&#xd;
+					if (form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Enviando para assinatura&quot;){&#xd;
+						throw &quot;Houve erros durante o envio do documento, verifique novamente.&quot;;&#xd;
+					}&#xd;
+				}&#xd;
+				&#xd;
+							&#xd;
+			};&#xd;
+		} else {&#xd;
+			throw &quot;Não foi possível localizar Formulário Auxiliar com o código da solicitação&quot;;&#xd;
+		}&#xd;
+	} catch (e) {&#xd;
+		throw (&quot;Erro ao enviar documento para integração: &quot; + (e));&#xd;
+	}&#xd;
+	log.info(&quot;fim integração vertsign&quot;);&#xd;
 }</eventDescription>
     </WorkflowProcessEvent>
     <WorkflowProcessEvent>
@@ -2102,10 +2102,10 @@ function hex2a(r){for(var t=String(r),n=&quot;&quot;,e=0;e&lt;t.length&amp;&amp;
         <processId>aprovacao_projeto_dex1</processId>
         <version>1</version>
       </workflowProcessEventPK>
-      <eventDescription>function servicetask54(attempt, message) {
-	log.info(&quot;anexando o doc ao processo&quot;);
-	hAPI.attachDocument(hAPI.getCardValue(&quot;nr_doc_form&quot;));
-	log.info(&quot;doc anexado ao processo&quot;);
+      <eventDescription>function servicetask54(attempt, message) {&#xd;
+	log.info(&quot;anexando o doc ao processo&quot;);&#xd;
+	hAPI.attachDocument(hAPI.getCardValue(&quot;nr_doc_form&quot;));&#xd;
+	log.info(&quot;doc anexado ao processo&quot;);&#xd;
 }</eventDescription>
     </WorkflowProcessEvent>
     <WorkflowProcessEvent>
@@ -2128,31 +2128,31 @@ function hex2a(r){for(var t=String(r),n=&quot;&quot;,e=0;e&lt;t.length&amp;&amp;
         <processId>aprovacao_projeto_dex1</processId>
         <version>1</version>
       </workflowProcessEventPK>
-      <eventDescription>function intermediateconditional51() {
-	var solicitacao = getValue(&quot;WKNumProces&quot;);
-	var finalizado  = false;
-	
-	log.info(&quot;&gt;&gt;&gt; Vertsign - BPM - Verificando status do documento&quot;);	
-	log.info(&quot;&gt;&gt;&gt; Solicitacao: &quot; + solicitacao);
-	
-	var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);
-	var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
-	
-	if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {		
-		
-		log.info(&quot;&gt;&gt;&gt; Status do Documento: &quot; + form_aux.getValue(0, &quot;statusAssinatura&quot;));
-		
-		if (form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Assinado&quot;  ||
-			form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Rejeitado&quot; ||
-			form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Cancelado&quot;){
-			finalizado = true;
-		}
-	} else {
-		log.info(&quot;&gt;&gt;&gt; Não localizado Formulário Auxiliar, irá finalizar com erros&quot;);
-		finalizado = true;
-	}
-	
-	return finalizado;
+      <eventDescription>function intermediateconditional51() {&#xd;
+	var solicitacao = getValue(&quot;WKNumProces&quot;);&#xd;
+	var finalizado  = false;&#xd;
+	&#xd;
+	log.info(&quot;&gt;&gt;&gt; Vertsign - BPM - Verificando status do documento&quot;);	&#xd;
+	log.info(&quot;&gt;&gt;&gt; Solicitacao: &quot; + solicitacao);&#xd;
+	&#xd;
+	var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);&#xd;
+	var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);&#xd;
+	&#xd;
+	if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {		&#xd;
+		&#xd;
+		log.info(&quot;&gt;&gt;&gt; Status do Documento: &quot; + form_aux.getValue(0, &quot;statusAssinatura&quot;));&#xd;
+		&#xd;
+		if (form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Assinado&quot;  ||&#xd;
+			form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Rejeitado&quot; ||&#xd;
+			form_aux.getValue(0, &quot;statusAssinatura&quot;) == &quot;Cancelado&quot;){&#xd;
+			finalizado = true;&#xd;
+		}&#xd;
+	} else {&#xd;
+		log.info(&quot;&gt;&gt;&gt; Não localizado Formulário Auxiliar, irá finalizar com erros&quot;);&#xd;
+		finalizado = true;&#xd;
+	}&#xd;
+	&#xd;
+	return finalizado;&#xd;
 }</eventDescription>
     </WorkflowProcessEvent>
   </list>
@@ -2285,11 +2285,11 @@ function hex2a(r){for(var t=String(r),n=&quot;&quot;,e=0;e&lt;t.length&amp;&amp;
         <stateSequence>51</stateSequence>
         <triggerSequence>0</triggerSequence>
       </processStateTriggerPK>
-      <runType>0</runType>
+      <runType>1</runType>
       <type>3</type>
       <value>aprovacao_projeto_dex1.intermediateconditional51.js</value>
       <timeTrigger>0:0:0</timeTrigger>
-      <frequencia>01</frequencia>
+      <frequencia>02</frequencia>
     </ProcessStateTrigger>
   </list>
   <list/>
